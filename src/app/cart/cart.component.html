@@ -2,11 +2,11 @@
   Cart
 </h3>
 
-<ol
-  *ngFor="let item of items"
-  class="cart-item"
->
-  <li>
+<ol>
+  <li
+    *ngFor="let item of items"
+    class="cart-item"
+  >
     <span>
       {{ item.name }}
     </span>
