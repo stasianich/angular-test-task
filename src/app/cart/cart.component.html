@@ -1,0 +1,17 @@
+<h3>
+  Cart
+</h3>
+
+<ol>
+  <li
+    *ngFor="let item of items"
+    class="cart-item"
+  >
+    <span>
+      {{ item.name }}
+    </span>
+    <span>
+      {{ item.price | currency }}
+    </span>
+  </li>
+</ol>
