@@ -10,7 +10,6 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 
-
 @NgModule({
   imports: [
     BrowserModule,
@@ -26,7 +25,7 @@ import { CartComponent } from './cart/cart.component';
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
   ],
   bootstrap: [
     AppComponent
