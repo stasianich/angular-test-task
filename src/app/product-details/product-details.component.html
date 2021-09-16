@@ -6,7 +6,7 @@
   *ngIf="product; else productNotFound"
 >
   <h3>
-    {{ product.name }}
+    {{ product.name | uppercase }}
   </h3>
 
   <h4>
