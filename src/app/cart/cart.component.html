@@ -19,3 +19,35 @@
     </span>
   </li>
 </ol>
+
+<form
+  [formGroup]="checkoutForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div>
+    <label for="name">
+      <input
+        type="text"
+        id="name"
+        formControlName="name"
+      >
+    </label>
+  </div>
+
+  <div>
+  <label for="address">
+    <input
+      type="text"
+      id="address"
+      formControlName="address"
+    >
+  </label>
+</div>
+
+  <button
+    class="button"
+    type="submit"
+  >
+    Purchase
+  </button>
+</form>
