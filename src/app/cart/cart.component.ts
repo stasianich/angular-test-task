@@ -7,14 +7,14 @@ import { Product } from '../products';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
+
 export class CartComponent implements OnInit {
   items: Product[] | [] = this.cartService.getItems();
 
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
   ) {}
 
   ngOnInit() {
   }
-
 }

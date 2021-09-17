@@ -1,3 +1,18 @@
-<p>
-  shipping works! Here!
-</p>
+<h3>
+  Our Shipping Prices!
+</h3>
+
+<ul>
+  <li
+    class="shipping-item"
+    *ngFor="let shipping of shippingCosts | async"
+  >
+    <span>
+      {{ shipping.type}}
+    </span>
+
+    <span>
+      {{ shipping.price | currency }}
+    </span>
+  </li>
+</ul>
